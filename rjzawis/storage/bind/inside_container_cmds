@@ -1,0 +1,9 @@
+    1  alias lsa='clear;ls -al --color=auto;pwd'
+    2  lsa
+    3  cd src
+    4  lsa
+    5  cd mountdir/
+    6  lsa
+    7  cat goo
+    8  cat goo.txt 
+    9  history >insidecontainercmds

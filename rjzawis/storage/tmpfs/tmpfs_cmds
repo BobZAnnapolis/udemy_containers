@@ -1,0 +1,500 @@
+  297  ansible-playbook pingtest.yml 
+  298  lsa
+  299  ssh ec2-user@18.233.64.164
+  300  ssh ec2-user@18.206.207.61
+  301  lsa
+  302  ansible-playbook pingtest.yml 
+  303  ssh ec2-user@18.206.207.61
+  304  exit
+  305  exit
+  306  dev
+  307  lsa
+  308  alias
+  309  lsa
+  310  mv udemy_docker udemy_docker2
+  311  mkdir udemy_docker
+  312  cd udemy_docker
+  313  lsa
+  314  cp ../aws_certification_course/2020_AWS_KeyPair.pem .
+  315  ssh -i "2020_AWS_KeyPair.pem" ec2-user@54.157.142.243
+  316  ssh -i "2020_AWS_KeyPair.pem" ec2-user@54.157.142.243
+  317  pwd
+  318  cd..
+  319  cd udemy_containers/
+  320  lsa
+  321  ssh -i "2020_AWS_KeyPair.pem" ec2-user@54.157.142.243
+  322  dev
+  323  cd udemy_docker
+  324  lsa
+  325  docker info
+  326  docker version
+  327  git clone https://github.com/15Dkatz/docker-guides
+  328  lsa
+  329  cd docker-guides/
+  330  lsa
+  331  cat .gitignore 
+  332  cd..
+  333  rmfr *
+  334  lsa
+  335  cd..
+  336  git clone https://github.com/15Dkatz/docker-guides udemy_docker_bld_containers
+  337  lsa
+  338  cdrmfr udemy_docker
+  339  rmfr udemy_docker
+  340  lsa
+  341  cd udemy_docker_bld_containers/
+  342  lsa
+  343  mv ../aws_certification_course/2020_AWS_KeyPair.pem 
+  344  lsa
+  345  cp ../aws_certification_course/2020_AWS_KeyPair.pem .
+  346  lsa
+  347  rmfr .git
+  348  cat .gitignore 
+  349  lsa
+  350  git init
+  351  git add -A
+  352  git add .
+  353  git commit -m "1st commit"
+  354  git remote add origin https://github.com/BobZAnnapolis/udemy_docker_bld_containers.git
+  355  git push -u origin master
+  356  git remote add origin https://github.com/BobZAnnapolis/udemy_docker_bld_containers.git
+  357  lsa
+  358  rmfr .git
+  359  lsa
+  360  lsa
+  361  cd..
+  362  rmfr udemy_docker_bld_containers
+  363  lsa
+  364  cd udemy_docker2/
+  365  lsa
+  366  more README.md 
+  367  cd..
+  368  mv udemy_docker2/ udemy_devops_docker/
+  369  lsa
+  370  lsa
+  371  git clone https://github.com/BobZAnnapolis/udemy_docker_build_containers.git
+  372  lsa
+  373  cd udemy_docker_build_containers/
+  374  lsa
+  375  history | grep clone
+  376  git clone https://github.com/15Dkatz/docker-guides
+  377  lsa
+  378  cd docker-guides/lsa
+  379  cd docker-guides/
+  380  lsa
+  381  rmfr .git/
+  382  lsa
+  383  mv * ../.
+  384  lsa
+  385  mv .gitignore ../.
+  386  lsa
+  387  cd..
+  388  rmfr docker-guides/
+  389  lsa
+  390  cp ../aws_certification_course/2020_AWS_KeyPair.pem .
+  391  lsa
+  392  more README.md 
+  393  lsa
+  394  cat README.md 
+  395  cd..
+  396  git clone https://github.com/BobZAnnapolis/udemy_containers.git
+  397  lsa
+  398  lsa
+  399  cd udemy_docker_build_containers/
+  400  lsa
+  401  rmfr .git/
+  402  lsa
+  403  mv * ../udemy_containers/.
+  404  lsa
+  405  mv .gitignore ../udemy_containers/.
+  406  lsa
+  407  cd.
+  408  cd..
+  409  rmfr udemy_docker_build_containers
+  410  lsa
+  411  cd udemy_containers/
+  412  lsa
+  413  cat README.md 
+  414  git commit -am "1st commit"
+  415  git add -A
+  416  git add .
+  417  git commit -am "1st commit"
+  418  git push
+  419  lsa
+  420  git status
+  421  lsa
+  422  docker
+  423  docker ps
+  424  docker container ls
+  425  docker container 
+  426  docker container ls
+  427  docker container ls
+  428  docker
+  429  docker search ubuntu
+  430  docker create --help
+  431  docker create --name=foo -it ubuntu bash
+  432  docker ps -a
+  433  docker ps
+  434  docker container ls
+  435  docker container ls -a
+  436  docker start foo
+  437  docker container ls -a
+  438  docker container ls 
+  439  docker attach foo
+  440  docker logs foo
+  441  docker logs foo
+  442  docker attach foo
+  443  docker logs foo
+  444  docker container ls
+  445  docker logs foo
+  446  docker container --help
+  447  docker rm foo
+  448  docker stop foo
+  449  docker container ls
+  450  docker container ls -a
+  451  docker rm foo
+  452  docker container ls -a
+  453  docker run --help
+  454  docker run --name=bar -it ubuntu bash
+  455  docker container ls -a
+  456  docker images
+  457  docker rm -f bar
+  458  docker container ls -a
+  459  docker container ls 
+  460  docker images
+  461  docker image ls
+  462  lsa
+  463  cd video_notes/
+  464  lsa
+  465  cd 00_intro/
+  466  lsa
+  467  cd..
+  468  cd 01_containers/
+  469  lsa
+  470  cd..
+  471  cd 02_images/
+  472  lsa
+  473  more build_express_image_notes.txt 
+  474  lsa
+  475  cd..
+  476  cd..
+  477  mkdir containers
+  478  cd containers/
+  479  mkdir serve
+  480  cd serve
+  481  mkdir display
+  482  lsa
+  483  cat > display/foo.txt
+  484  cat display/
+  485  cat display/foo.txt 
+  486  mkdir display/site
+  487  ls display
+  488  cat> display/site/index.html
+  489  cat display/site/index.html 
+  490  docker search node
+  491  docker build --help
+  492  docker build . -t rjz/serve
+  493  ls -al
+  494  cd display/
+  495  ls -al
+  496  lsa
+  497  cd..
+  498  lsa
+  499  docker image ls
+  500  docker run --name=serve -p=3001:5000  rjz/serve
+  501  dev
+  502  cd udemy_containers/
+  503  docker container ls -al
+  504  docker stop serve
+  505  docker container ls -a
+  506  docker ps -a
+  507  lsa
+  508  cd serve/
+  509  lsa
+  510  cat Dockerfile 
+  511  cd tests/
+  512  lsa
+  513  cd..
+  514  mkdir nodejs
+  515  mv Dockerfile nodejs/.
+  516  mv display/ nodejs/.
+  517  lsa
+  518  mkdir express
+  519  lsa
+  520  cd express/
+  521  lsa
+  522  lsa
+  523  lsa
+  524  vi server.js
+  525  lsa
+  526  cat Dockerfile 
+  527  docker build . -t rjz/express
+  528  docker image ls
+  529  docker run --name=express -p3002:80 rjz/express
+  530  docker run --name=express -p3002:80 rjz/express
+  531  docker ps
+  532  docker ps -a
+  533  docker run --name=express -d -p3002:80 rjz/express 
+  534  docker rm 278b
+  535  docker run --name=express -d -p3002:80 rjz/express 
+  536  docker logs express
+  537  docker stop -f express
+  538  history
+  539  lsa
+  540  docker ps -a
+  541  docker images
+  542  pwd
+  543  lsa
+  544  git init
+  545  lsa
+  546  cd .git/
+  547  lsa
+  548  cd..
+  549  npm install
+  550  lsa
+  551  cd node_modules/
+  552  lsa
+  553  cd..
+  554  lsa
+  555  docker build . -t rjz/express
+  556  lsa
+  557  mkdir app
+  558  cd app
+  559  mv ../server.js .
+  560  lsa
+  561  touch bar.js
+  562  touch foo.js
+  563  lsa
+  564  cd..
+  565  docker ps -a
+  566  docker ps
+  567  docker images
+  568  docker rmi 72c983b1700a
+  569  2adadf604107
+  570  docker rmi 2adadf604107
+  571  docker build . -t rjz/express
+  572  docker images
+  573  docker ps -a
+  574  docker ps 
+  575  docker run -d -p=3002:80 --name=express rjz/express
+  576  docker build . -t rjz/express
+  577  docker build . -t rjz/express
+  578  docker images
+  579  docker rmi dcc18ac5663b fc0da7bfef0a
+  580  docker exec -it express bash
+  581  lsa
+  582  docker rm -f express
+  583  docker ps -a
+  584  docker ps
+  585  docker images
+  586  docker rmi dcc18ac5663b
+  587  docker images
+  588  lsa
+  589  cd..
+  590  mkdir php
+  591  cd php
+  592  lsa
+  593  lsa
+  594  lsa
+  595  cd..
+  596  cd..
+  597  mv serve/ rjzawis/
+  598  cd rjzawis/
+  599  lsa
+  600  cd php
+  601  lsa
+  602  cd..
+  603  cd..
+  604  cd containers
+  605  lsa
+  606  cd serve
+  607  lsa
+  608  cat Dockerfile 
+  609  cd display/
+  610  lsa
+  611  cd..
+  612  cd..
+  613  cd..
+  614  cd rjzawis/
+  615  lsa
+  616  cd php/
+  617  lsa
+  618  lsa
+  619  docker build . -t rjz/php
+  620  docker build . -t rjz/php
+  621  docker run --name=php -p=3003:80 rjz/php
+  622  lsa
+  623  docker ps -a
+  624  docker ps
+  625  cd..
+  626  mkdir flask
+  627  cd flask
+  628  lsa
+  629  touch requirements.txt
+  630  touch app.py
+  631  lsa
+  632  lsa
+  633  docker build . -t rjz/flask
+  634  docker build . -t rjz/flask
+  635  docker image ls
+  636  docker run --name=flask -p:3004:80 rjz/flask
+  637  docker ps
+  638  docker ps -a
+  639  docker container ls -a
+  640  docker rm -f b90296aecea2 9378853a7f0d
+  641  docker container ls -a
+  642  lsa
+  643  cd..
+  644  cd..
+  645  git status
+  646  git add -A
+  647  lsa
+  648  git status
+  649  git add -A
+  650  git add .
+  651  lsa
+  652  cd express/
+  653  lsa
+  654  cd..
+  655  git status
+  656  git add -A
+  657  cd rjzawis/
+  658  lsa
+  659  cd express/
+  660  lsa
+  661  rmfr .git/
+  662  lsa
+  663  cd..
+  664  cd..
+  665  git add -A
+  666  git add .
+  667  git commit -am "added express, php & flask examples"
+  668  git push
+  669  lsa
+  670  cd rjzawis/
+  671  lsa
+  672  docker volume --help
+  673  mkdir storage
+  674  cd storage
+  675  lsa
+  676  mkdir volume
+  677  cdf volume
+  678  cdf volume
+  679  cd volume
+  680  docker volume create shared-vol
+  681  docker volume ls
+  682  docker inspect shared-vol
+  683  sudo ls -al /var/lib/docker/volumes
+  684  sudo ls -al /var/lib/docker/volume
+  685  sudo ls -al /var/lib/docker/volumes/shared-vol/_data
+  686  screen
+  687  screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+  688  lsa
+  689  docker run -it --name=foo --mount source=shared-vol, target=/src/shared ubuntu bash
+  690  docker run -it --name=foo --mount source=shared-vol,target=/src/shared ubuntu bash
+  691  lsa
+  692  docker run -it --name=bar --mount source=shared-vol,target=/src/shared ubuntu bash
+  693  lsa
+  694  docker ps
+  695  docker rm -f foo bar
+  696  docker ps
+  697  docker ps -a
+  698  docker volume
+  699  docker volume ls
+  700  docker volume rm shared-vol
+  701  docker volume ls
+  702  lsa
+  703  history >volumes.txt
+  704  vi volumes
+  705  vi volumes.txt 
+  706  cd..
+  707  mkdir bind
+  708  cd bind
+  709  lsa
+  710  echo "bind mounts : container & host machine can write to the same directory"
+  711  cat >goo.txt
+  712  lsa
+  713  cat goo.txt 
+  714  pwd
+  715  echo pwd
+  716  echo $pwd
+  717  docker run -it --name=foo --mount type=bind,source=/Users/bobzawislak/dev/udemy_containers/rjzawis/storage/bind,target=/src/mountdir ubuntu bash
+  718  lsa
+  719  docker ps
+  720  docker rm -f foo
+  721  docker ps
+  722  lsa
+  723  cd..
+  724  mkdir tmpfs
+  725  lsa
+  726  cd tmpfs/
+  727  lsa
+  728  cd..
+  729  cd..
+  730  mkdir apps
+  731  mv express/ apps/
+  732  mv flask/ apps/
+  733  mv nodejs/ apps/
+  734  mv php/ apps/
+  735  lsa
+  736  cd tests/
+  737  lsa
+  738  cd..
+  739  cd..
+  740  lsa
+  741  cd containers/
+  742  lsa
+  743  cd serve/
+  744  lsa
+  745  cd..
+  746  cd..
+  747  rmfr containers/
+  748  lsa
+  749  cd express/
+  750  lsa
+  751  cd..
+  752  rmfr express/
+  753  cd flask/
+  754  lsa
+  755  cd..
+  756  rmfr flask/
+  757  lsa
+  758  cd node-php
+  759  cd..
+  760  cd php/
+  761  lsa
+  762  cd..
+  763  rmfr php/
+  764  lsa
+  765  cd serve/
+  766  lsa
+  767  cd express/
+  768  lsa
+  769  cd..
+  770  cd..
+  771  rmfr serve/
+  772  lsa
+  773  cat .gitignore 
+  774  cd rjzawis/
+  775  lsa
+  776  cd storage/
+  777  cd tmpfs/
+  778  lsa
+  779  echo "memory doesn't persist eg, secrets, passwords, exists during lifetime of container but is gone when container stops"
+  780  docker run -it -d --name=baz --mount type=tmpfs,destination=/tmpdir ubuntu bash
+  781  docker inspect baz'
+  782  docker inspect baz
+  783  docker inspect baz >baz_inspect
+  784  docker inspect baz
+  785  docker attach baz
+  786  lsa
+  787  docker attach baz
+  788  docker stop baz
+  789  docker start baz
+  790  docker attach baz
+  791  docker rm -f baz
+  792  docker ps -a
+  793  lsa
+  794  cat baz_inspect 
+  795  lsa
+  796  history >tmpfs_cmds

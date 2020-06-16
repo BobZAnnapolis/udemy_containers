@@ -1,0 +1,25 @@
+  lsa
+  docker volume --help
+  mkdir storage
+  cd storage
+  lsa
+  mkdir volume
+  cd volume
+  docker volume create shared-vol
+  docker volume ls
+  docker inspect shared-vol
+  sudo ls -al /var/lib/docker/volume
+  sudo ls -al /var/lib/docker/volumes/shared-vol/_data
+  lsa
+  docker run -it --name=foo --mount source=shared-vol,target=/src/shared ubuntu bash
+  lsa
+  docker run -it --name=bar --mount source=shared-vol,target=/src/shared ubuntu bash
+  lsa
+  docker ps
+  docker rm -f foo bar
+  docker ps
+  docker ps -a
+  docker volume
+  docker volume ls
+  docker volume rm shared-vol
+  docker volume ls
