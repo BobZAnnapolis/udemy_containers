@@ -1,0 +1,34 @@
+
+foo : 172.17.0.2/16
+bar : 172.17.0.3/16
+
+baz : 172.18.0.2/16 - iMac privatenw
+goo : 172.18.0.3/16 - iMac privatenw
+
+baz : 172.19.0.2/16 - EC2 privatenw
+goo : 172.19.0.3/16 - EC2 privatenw
+
+  501  dev
+  502  cd udemy_containers/
+  506  cd networking/
+  510  ifconfig
+  512  docker network --help
+  513  docker network ls
+  514  docker run -itd --name=foo busybox
+  515  docker container ls
+  516  docker run -itd --name=bar busybox
+  517  docker container ls
+  518  docker network inspect bridge
+  519  docker attach foo
+  521  docker network ls
+  522  docker network create privatenw
+  523  docker network ls
+  524  docker run --network=privatenw -itd --name=baz busybox
+  525  docker inspect privatenw
+  526  docker run --network=privatenw -itd --name=goo busybox
+  527  docker inspect privatenw
+  528  docker attach baz
+  529  docker ps -a
+  530  docker container ls -aq
+  531  docker container ls -aq | xargs docker rm -f
+  532  docker ps -a
