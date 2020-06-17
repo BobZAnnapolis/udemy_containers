@@ -1,0 +1,37 @@
+swarm_1 : 100.26.171.123  : 172.31.52.163
+swarm_2 : 35.173.201.110  : 172.31.34.250
+swarm_3 : 3.84.81.61      : 172.31.39.43
+
+docker swarm join --token SWMTKN-1-23gnaayyed9x6w7ktgr4a0730gtks4djixo28nk5gc2a8w42yi-e0u7im0vojqwz6snwhdcuo75s 172.31.52.163:2377
+
+   sudo yum update -y
+   sudo yum install -y docker
+   sudo systemctl start docker
+   sudo systemctl enable docker
+   sudo usermod -G docker ec2-user
+   exit
+   docker info
+   docker ps
+   docker swarm --help
+   docker swarm init --help
+   ifconfig
+   docker swarm init --advertise-addr=172.31.52.163
+      - this creates the manager
+   echo "docker swarm join --token SWMTKN-1-23gnaayyed9x6w7ktgr4a0730gtks4djixo28nk5gc2a8w42yi-e0u7im0vojqwz6snwhdcuo75s 172.31.52.163:2377"
+      - execute above join command on other nodes to have them join the swarm
+   docker node ls
+   docker network ls
+   docker network inspect ingress
+   docker node ls  - cmd only available from a manager node - 1st one to join
+   docker service --help
+   docker service create --help
+   docker service create --name=site --publish=80:80 nginx
+      - stands up an nginx server on this node - but is also accessible from the other node public ip addresses
+   docker service ls
+   docker service ps site
+   docker service --help
+   docker service update --replicas 6 site
+   docker service ps site
+   docker service ls
+   docker service rm site
+   docker service ls
