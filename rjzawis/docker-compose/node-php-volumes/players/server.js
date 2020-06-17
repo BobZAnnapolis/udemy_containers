@@ -5,9 +5,10 @@ const PORT = 80;
 
 app.get('/', (req, res) => {
   res.json({
-    players: ['Billy', 'John', 'Sarah', 'Emma', 'Mitchell', 'Ryan']
+    players: ['on iMac', 'Ryan', 'Billy', 'John', 'Sarah', 'Emma', 'Mitchell', 'Mark']
   });
 });
 
 app.listen(PORT, HOST);
+
 console.log(`Running on http://${HOST}:${PORT}`);

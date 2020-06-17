@@ -2,6 +2,8 @@ version: '3'
 
 services:
   db:
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: "trust"
     build: ./db
     networks:
       - core
@@ -18,7 +20,7 @@ services:
   prices:
     build: ./prices
     volumes:
-      - ./prices:/app
+      - ./prices/app
     ports:
       - 5002:80
     depends_on:
